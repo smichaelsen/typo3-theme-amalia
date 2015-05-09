@@ -1,0 +1,5 @@
+plugin.tx_themeamalia.view {
+	templateRootPaths.default = EXT:theme_amalia/Resources/Private/Templates/
+	partialRootPaths.default = EXT:theme_amalia/Resources/Private/Partials/
+	layoutRootPaths.default = EXT:theme_amalia/Resources/Private/Layouts/
+}

@@ -1,0 +1,5 @@
+plugin.tx_themeamalia.view {
+	templateRootPaths.0 = {$plugin.tx_themeamalia.view.templateRootPaths.default}
+	partialRootPaths.0 = {$plugin.tx_themeamalia.view.partialRootPaths.default}
+	layoutRootPaths.0 = {$plugin.tx_themeamalia.view.layoutRootPaths.default}
+}
