@@ -1,2 +1,9 @@
-<f:layout name="Page" />
-<f:render section="Main" />
+<f:layout name="Page"/>
+
+<div class="container" id="wrapper">
+	<f:render partial="Page/Topbar" section="main"/>
+	<f:render partial="Page/Navbar" section="main"/>
+	<f:render section="Main"/>
+	<f:render partial="Page/Footer" section="main"/>
+	<f:render partial="Page/Copyright" section="main"/>
+</div>
