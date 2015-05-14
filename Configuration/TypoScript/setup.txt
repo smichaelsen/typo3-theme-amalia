@@ -3,3 +3,23 @@ plugin.tx_themeamalia.view {
 	partialRootPaths.0 = {$plugin.tx_themeamalia.view.partialRootPaths.default}
 	layoutRootPaths.0 = {$plugin.tx_themeamalia.view.layoutRootPaths.default}
 }
+
+page {
+	includeCSS {
+		bootstrap = EXT:theme_amalia/Resources/Public/Stylesheets/bootstrap.css
+		bootstrap_responsive = EXT:theme_amalia/Resources/Public/Stylesheets/bootstrap-responsive.css
+		theme_amalia = EXT:theme_amalia/Resources/Public/Stylesheets/style.css
+	}
+	includeJSFooterlibs {
+		jQuery = EXT:theme_amalia/Resources/Public/Javascript/jquery.js
+		bootstrap = EXT:theme_amalia/Resources/Public/Javascript/bootstrap.js
+		gmaps_sensor = http://maps.google.com/maps/api/js?sensor=false&amp;language=en
+		gmaps_sensor.external = 1
+		gmap3 = EXT:theme_amalia/Resources/Public/Javascript/gmap3.js
+		jQuery_fancybox = EXT:theme_amalia/Resources/Public/Javascript/jquery.fancybox.js
+		modernizr = EXT:theme_amalia/Resources/Public/Javascript/modernizr.js
+	}
+	includeJSFooter {
+		theme_amalia = EXT:theme_amalia/Resources/Public/Javascript/script.js
+	}
+}
