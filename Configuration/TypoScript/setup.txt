@@ -1,14 +1,22 @@
-plugin.tx_themeamalia.view {
-	templateRootPaths.0 = {$plugin.tx_themeamalia.view.templateRootPaths.default}
-	partialRootPaths.0 = {$plugin.tx_themeamalia.view.partialRootPaths.default}
-	layoutRootPaths.0 = {$plugin.tx_themeamalia.view.layoutRootPaths.default}
+plugin.tx_themeamalia {
+	view {
+		templateRootPaths.0 = {$plugin.tx_themeamalia.view.templateRootPaths.default}
+		partialRootPaths.0 = {$plugin.tx_themeamalia.view.partialRootPaths.default}
+		layoutRootPaths.0 = {$plugin.tx_themeamalia.view.layoutRootPaths.default}
+	}
+	settings {
+		pagetitle = {$plugin.tx_themeamalia.pagetitle}
+		subtitle = {$plugin.tx_themeamalia.subtitle}
+	}
 }
+
 
 page {
 	includeCSS {
 		bootstrap = EXT:theme_amalia/Resources/Public/Stylesheets/bootstrap.css
 		bootstrap_responsive = EXT:theme_amalia/Resources/Public/Stylesheets/bootstrap-responsive.css
 		theme_amalia = EXT:theme_amalia/Resources/Public/Stylesheets/style.css
+		theme_amalia_overrides = EXT:theme_amalia/Resources/Public/Stylesheets/overrides.css
 	}
 	includeJSFooterlibs {
 		jQuery = EXT:theme_amalia/Resources/Public/Javascript/jquery.js

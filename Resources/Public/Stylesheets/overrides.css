@@ -1,0 +1,4 @@
+.logo h1 > span {
+	border: none;
+	padding: 0;
+}

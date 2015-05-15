@@ -1,5 +1,13 @@
-plugin.tx_themeamalia.view {
-	templateRootPaths.default = EXT:theme_amalia/Resources/Private/Templates/
-	partialRootPaths.default = EXT:theme_amalia/Resources/Private/Partials/
-	layoutRootPaths.default = EXT:theme_amalia/Resources/Private/Layouts/
+# customsubcategory=theme=LLL:EXT:theme_amalia/Resources/Private/Language/locallang.xlf:constant_editor.subcategory.theme
+
+plugin.tx_themeamalia {
+	# cat=theme_amailia/theme/a; type=string; label=LLL:EXT:theme_amalia/Resources/Private/Language/locallang.xlf:constant_editor.field.pagetitle
+	pagetitle = amalia<span>.</span>
+	# cat=theme_amailia/theme/b; type=string; label=LLL:EXT:theme_amalia/Resources/Private/Language/locallang.xlf:constant_editor.field.subtitle
+	subtitle = This is the subtitle
+	view {
+		templateRootPaths.default = EXT:theme_amalia/Resources/Private/Templates/
+		partialRootPaths.default = EXT:theme_amalia/Resources/Private/Partials/
+		layoutRootPaths.default = EXT:theme_amalia/Resources/Private/Layouts/
+	}
 }

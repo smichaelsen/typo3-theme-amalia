@@ -3,6 +3,15 @@
 	<file source-language="en" datatype="plaintext" original="messages" product-name="theme_amalia" date="2015-05-09T16:12:34+00:00">
 		<header/>
 		<body>
+			<trans-unit id="constant_editor.field.pagetitle">
+				<source>Page Title</source>
+			</trans-unit>
+			<trans-unit id="constant_editor.field.subtitle">
+				<source>Subtitle</source>
+			</trans-unit>
+			<trans-unit id="constant_editor.subcategory.theme">
+				<source>Theme options</source>
+			</trans-unit>
 			<trans-unit id="flux.fluidcontent">
 				<source>Fluid content element example</source>
 			</trans-unit>
@@ -14,6 +23,9 @@
 			</trans-unit>
 			<trans-unit id="flux.standard.description">
 				<source>Description can be entered in LLL file locallang.xlf of extension theme_amalia</source>
+			</trans-unit>
+			<trans-unit id="page.standard.col0">
+				<source>Content</source>
 			</trans-unit>
 		</body>
 	</file>
