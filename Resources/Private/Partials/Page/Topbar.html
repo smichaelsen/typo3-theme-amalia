@@ -12,7 +12,7 @@
 						<ul>
 							<v:page.menu.directory tagName="" pages="{settings.metaNavigationPid}" as="menu">
 								<f:for each="{menu}" as="menuItem">
-									<li>
+									<li{f:if(condition:'{menuItem.active}', then:' class="active"')}>
 										<f:render partial="Utility/MenuItemLink" section="main" arguments="{menuItem:menuItem}"/>
 									</li>
 								</f:for>

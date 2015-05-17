@@ -18,5 +18,9 @@
 	padding: 0 0 0 10px;
 	margin-top: -10px;
 	color: #aaaaaa;
-	letter-spacing: 0px;
+	letter-spacing: 0;
+}
+
+.top-bar ul li.active {
+	font-weight: bold;
 }

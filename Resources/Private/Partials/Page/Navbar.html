@@ -15,37 +15,26 @@
 						</a>
 						<div class="nav-collapse collapse navbar-responsive-collapse">
 							<ul class="nav">
-								<v:page.menu as="menu">
+								<v:page.menu as="menu" doktypes="1,3,4,199">
 									<f:for each="{menu}" as="menuItem">
-										<f:if condition="{menuItem.hasSubPages}">
+										<f:if condition="{menuItem.doktype} == '199'">
 											<f:then>
-												<f:render section="menuItemWithSubmenu" arguments="{menuItem:menuItem}"/>
+							</ul>
+							<ul class="nav pull-right">
 											</f:then>
 											<f:else>
-												<f:render section="menuItemWithoutSubmenu" arguments="{menuItem:menuItem}"/>
+												<f:if condition="{menuItem.hasSubPages}">
+													<f:then>
+														<f:render section="menuItemWithSubmenu" arguments="{menuItem:menuItem}"/>
+													</f:then>
+													<f:else>
+														<f:render section="menuItemWithoutSubmenu" arguments="{menuItem:menuItem}"/>
+													</f:else>
+												</f:if>
 											</f:else>
 										</f:if>
 									</f:for>
 								</v:page.menu>
-							</ul>
-							<ul class="nav pull-right">
-								<li class="active"><a href="#">Active Link</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Action</a></li>
-										<li>
-											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <i class="icon-caret-down icon-dropdown"></i></a>
-											<ul class="dropdown-menu subdropdown-menu">
-												<li><a href="#">Action</a></li>
-												<li><a href="#">Something else here</a></li>
-												<li><a href="#">Separated link</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Something else here</a></li>
-										<li><a href="#">Separated link</a></li>
-									</ul>
-								</li>
 							</ul>
 						</div>
 						<!-- /.nav-collapse -->
@@ -58,7 +47,7 @@
 </f:section>
 
 <f:section name="menuItemWithSubmenu">
-	<li class="dropdown">
+	<li class="dropdown{f:if(condition:'{menuItem.active}', then:' active')}">
 		<f:link.page pageUid="{menuItem.uid}" class="dropdown-toggle" data="{toggle:'dropdown'}">
 			{f:if(condition: menuItem.nav_title, then: menuItem.nav_title, else: menuItem.title)}
 			<b class="caret"></b>
@@ -74,7 +63,7 @@
 </f:section>
 
 <f:section name="menuItemWithoutSubmenu">
-	<li>
+	<li{f:if(condition:'{menuItem.active}', then:' class="active"')}>
 		<f:render partial="Utility/MenuItemLink" section="main" arguments="{menuItem:menuItem}"/>
 	</li>
 </f:section>
