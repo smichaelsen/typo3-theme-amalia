@@ -5,9 +5,11 @@ plugin.tx_themeamalia {
 	pagetitle = amalia<span>.</span>
 	# cat=theme_amailia/theme/b; type=string; label=LLL:EXT:theme_amalia/Resources/Private/Language/locallang.xlf:constant_editor.field.subtitle
 	subtitle = This is the subtitle
-	# cat=theme_amailia/theme/c; type=int+; label=LLL:EXT:theme_amalia/Resources/Private/Language/locallang.xlf:constant_editor.field.homePid
+	# cat=theme_amailia/theme/c; type=string; label=LLL:EXT:theme_amalia/Resources/Private/Language/locallang.xlf:constant_editor.field.phoneNumber
+	phoneNumber = 0123456789
+	# cat=theme_amailia/theme/zy; type=int+; label=LLL:EXT:theme_amalia/Resources/Private/Language/locallang.xlf:constant_editor.field.homePid
 	homePid = 1
-	# cat=theme_amailia/theme/d; type=int+; label=LLL:EXT:theme_amalia/Resources/Private/Language/locallang.xlf:constant_editor.field.metaNavigationPid
+	# cat=theme_amailia/theme/zz; type=int+; label=LLL:EXT:theme_amalia/Resources/Private/Language/locallang.xlf:constant_editor.field.metaNavigationPid
 	metaNavigationPid =
 	view {
 		templateRootPaths.default = EXT:theme_amalia/Resources/Private/Templates/

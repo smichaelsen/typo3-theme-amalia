@@ -12,6 +12,9 @@
 			<trans-unit id="constant_editor.field.pagetitle">
 				<source>Page Title</source>
 			</trans-unit>
+			<trans-unit id="constant_editor.field.phoneNumber">
+				<source>Phone Number: Displayed in the page top bar</source>
+			</trans-unit>
 			<trans-unit id="constant_editor.field.subtitle">
 				<source>Subtitle</source>
 			</trans-unit>

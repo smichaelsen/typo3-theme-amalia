@@ -8,6 +8,7 @@ plugin.tx_themeamalia {
 		homePid = {$plugin.tx_themeamalia.homePid}
 		metaNavigationPid = {$plugin.tx_themeamalia.metaNavigationPid}
 		pagetitle = {$plugin.tx_themeamalia.pagetitle}
+		phoneNumber = {$plugin.tx_themeamalia.phoneNumber}
 		subtitle = {$plugin.tx_themeamalia.subtitle}
 	}
 }
