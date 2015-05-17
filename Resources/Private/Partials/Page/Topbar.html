@@ -24,7 +24,9 @@
 				<div class="span12" id="header">
 					<div class="logo">
 						<h1>
-							<f:format.htmlentitiesDecode>{settings.pagetitle}</f:format.htmlentitiesDecode>
+							<f:link.page pageUid="{settings.homePid}">
+								<f:format.htmlentitiesDecode>{settings.pagetitle}</f:format.htmlentitiesDecode>
+							</f:link.page>
 							<small>{settings.subtitle}</small>
 						</h1>
 					</div>

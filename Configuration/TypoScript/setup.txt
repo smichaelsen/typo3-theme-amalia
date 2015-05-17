@@ -5,6 +5,7 @@ plugin.tx_themeamalia {
 		layoutRootPaths.0 = {$plugin.tx_themeamalia.view.layoutRootPaths.default}
 	}
 	settings {
+		homePid = {$plugin.tx_themeamalia.homePid}
 		pagetitle = {$plugin.tx_themeamalia.pagetitle}
 		subtitle = {$plugin.tx_themeamalia.subtitle}
 	}

@@ -3,6 +3,9 @@
 	<file source-language="en" datatype="plaintext" original="messages" product-name="theme_amalia" date="2015-05-09T16:12:34+00:00">
 		<header/>
 		<body>
+			<trans-unit id="constant_editor.field.homePid">
+				<source>Home Pid: Page Uid of the home page</source>
+			</trans-unit>
 			<trans-unit id="constant_editor.field.pagetitle">
 				<source>Page Title</source>
 			</trans-unit>
