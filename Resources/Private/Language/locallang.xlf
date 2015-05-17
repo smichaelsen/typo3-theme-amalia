@@ -6,6 +6,9 @@
 			<trans-unit id="constant_editor.field.homePid">
 				<source>Home Pid: Page Uid of the home page</source>
 			</trans-unit>
+			<trans-unit id="constant_editor.field.metaNavigationPid">
+				<source>Meta Navigation Pid: Page Uid of the meta navigation folder</source>
+			</trans-unit>
 			<trans-unit id="constant_editor.field.pagetitle">
 				<source>Page Title</source>
 			</trans-unit>

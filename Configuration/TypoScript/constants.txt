@@ -7,6 +7,8 @@ plugin.tx_themeamalia {
 	subtitle = This is the subtitle
 	# cat=theme_amailia/theme/c; type=int+; label=LLL:EXT:theme_amalia/Resources/Private/Language/locallang.xlf:constant_editor.field.homePid
 	homePid = 1
+	# cat=theme_amailia/theme/d; type=int+; label=LLL:EXT:theme_amalia/Resources/Private/Language/locallang.xlf:constant_editor.field.metaNavigationPid
+	metaNavigationPid =
 	view {
 		templateRootPaths.default = EXT:theme_amalia/Resources/Private/Templates/
 		partialRootPaths.default = EXT:theme_amalia/Resources/Private/Partials/

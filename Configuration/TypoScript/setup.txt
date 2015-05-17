@@ -6,6 +6,7 @@ plugin.tx_themeamalia {
 	}
 	settings {
 		homePid = {$plugin.tx_themeamalia.homePid}
+		metaNavigationPid = {$plugin.tx_themeamalia.metaNavigationPid}
 		pagetitle = {$plugin.tx_themeamalia.pagetitle}
 		subtitle = {$plugin.tx_themeamalia.subtitle}
 	}
