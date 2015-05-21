@@ -1,0 +1,39 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+	 xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+	 xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+	<f:layout name="Content"/>
+
+	<f:section name="Configuration">
+		<flux:form id="teaser">
+			<flux:field.inline.fal name="image" maxItems="1"/>
+			<flux:field.input name="morebutton" placeholder="{f:translate(key:'frontend.teaser.more')}"/>
+		</flux:form>
+	</f:section>
+
+	<f:section name="Preview">
+		<f:translate key="flux.teaser"/>: {record.header}
+	</f:section>
+
+	<f:section name="Main">
+		<v:resource.record.fal table="tt_content" field="image" as="image">
+			<f:if condition="{image.0}">
+				<div class="item">
+					<f:render partial="Utility/ResponsiveImage" section="main" arguments="{image:image.0}"/>
+					<div class="container">
+						<div class="carousel-caption">
+							<h2>{record.header}</h2>
+							<p class="lead">{image.0.description}</p>
+							<p>
+								<f:link.page pageUid="{image.0.link}" class="btn btn-blue">
+									{morebutton -> v:or(alternative:'LLL:frontend.teaser.more')}
+								</f:link.page>
+							</p>
+						</div>
+					</div>
+				</div>
+			</f:if>
+		</v:resource.record.fal>
+	</f:section>
+</div>

@@ -13,7 +13,6 @@ plugin.tx_themeamalia {
 	}
 }
 
-
 page {
 	includeCSS {
 		bootstrap = EXT:theme_amalia/Resources/Public/Stylesheets/bootstrap.css
@@ -34,3 +33,5 @@ page {
 		theme_amalia = EXT:theme_amalia/Resources/Public/Javascript/script.js
 	}
 }
+
+<INCLUDE_TYPOSCRIPT: source="DIR:./Gridelements" extensions="ts">

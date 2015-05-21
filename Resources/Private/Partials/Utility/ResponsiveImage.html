@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+
+<body>
+<f:section name="main">
+	<img src="{f:uri.image(src:'{image.id}')}" alt="{image.alternative}"{f:if(condition:'{image.title}', then:' title="{image.title}"')}>
+</f:section>
+
+</body>

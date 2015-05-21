@@ -21,17 +21,23 @@
 			<trans-unit id="constant_editor.subcategory.theme">
 				<source>Theme options</source>
 			</trans-unit>
-			<trans-unit id="flux.fluidcontent">
-				<source>Fluid content element example</source>
+			<trans-unit id="flux.teaser">
+				<source>Teaser</source>
 			</trans-unit>
-			<trans-unit id="flux.fluidcontent.description">
-				<source>Description can be entered in LLL file locallang.xlf of extension theme_amalia</source>
+			<trans-unit id="flux.teaser.fields.image">
+				<source>Image</source>
 			</trans-unit>
-			<trans-unit id="flux.standard">
-				<source>Standard fluid page</source>
+			<trans-unit id="flux.teaser.fields.morebutton">
+				<source>Label for "more" button</source>
 			</trans-unit>
-			<trans-unit id="flux.standard.description">
-				<source>Description can be entered in LLL file locallang.xlf of extension theme_amalia</source>
+			<trans-unit id="frontend.teaser.more">
+				<source>Read more</source>
+			</trans-unit>
+			<trans-unit id="gridelement.topSlider.description">
+				<source>Displays a slider with teaser images</source>
+			</trans-unit>
+			<trans-unit id="gridelement.topSlider.title">
+				<source>Top Slider</source>
 			</trans-unit>
 			<trans-unit id="page.standard.col0">
 				<source>Content</source>
