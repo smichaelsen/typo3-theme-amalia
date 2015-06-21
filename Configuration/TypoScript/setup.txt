@@ -38,7 +38,7 @@ page {
 
 tt_content.stdWrap.innerWrap.cObject.default.stdWrap.if {
 	value.field = tx_fed_fcefile
-	isInList = theme_amalia:Teaser.html
+	isInList = AppZap.ThemeAmalia:Teaser.html
 	negate = 1
 }
 

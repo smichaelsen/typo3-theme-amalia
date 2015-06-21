@@ -1,0 +1,18 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+<f:if condition="{images.0}">
+	<div class="swiper-slide" style="background-image: url('{f:uri.image(src:'{images.0.id}')}');">
+		<f:render partial="Utility/ResponsiveImage" arguments="{image:images.0}"/>
+		<f:if condition="{record.header}">
+			<div class="swiper-text-wrapper">
+				<h2>{record.header}</h2>
+				<p>{teasertext}</p>
+				<f:if condition="{images.0.link}">
+					<f:link.page pageUid="{images.0.link}" class="btn">{morebutton -> v:or(alternative:'LLL:frontend.teaser.more')}</f:link.page>
+				</f:if>
+			</div>
+		</f:if>
+	</div>
+</f:if>
+
+</html>
