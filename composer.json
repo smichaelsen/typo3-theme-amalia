@@ -1,5 +1,10 @@
 {
 	"name": "smichaelsen/theme-amalia",
 	"description": "TYPO3 Bootstrap Theme \"Amalia\"",
-	"type": "typo3-cms-extension"
+	"type": "typo3-cms-extension",
+	"autoload": {
+		"psr-4": {
+			"AppZap\\ThemeAmalia\\": "Classes/"
+		}
+	}
 }
