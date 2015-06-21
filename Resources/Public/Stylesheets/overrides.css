@@ -24,3 +24,33 @@
 .top-bar ul li.active {
 	font-weight: bold;
 }
+
+.topslider .topslider-inner {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.topslider .item .container {
+	position: relative;
+	z-index: 3;
+}
+
+.topslider .item img {
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.stage-slider .swiper-text-wrapper {
+	background-color: rgba(220, 220, 200, 0.8);
+	position: absolute;
+	bottom: 20px;
+	padding: 2%;
+	right: 50px;
+	top: 20px;
+	width: 40%;
+}

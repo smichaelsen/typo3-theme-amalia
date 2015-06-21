@@ -19,9 +19,11 @@ page {
 		bootstrap_responsive = EXT:theme_amalia/Resources/Public/Stylesheets/bootstrap-responsive.css
 		theme_amalia = EXT:theme_amalia/Resources/Public/Stylesheets/style.css
 		theme_amalia_overrides = EXT:theme_amalia/Resources/Public/Stylesheets/overrides.css
+		jQuery_swiper = EXT:theme_amalia/Resources/Public/Stylesheets/swiper.css
 	}
 	includeJSFooterlibs {
 		jQuery = EXT:theme_amalia/Resources/Public/Javascript/jquery.js
+		jQuery_swiper = EXT:theme_amalia/Resources/Public/Javascript/jquery.swiper.js
 		bootstrap = EXT:theme_amalia/Resources/Public/Javascript/bootstrap.js
 		gmaps_sensor = http://maps.google.com/maps/api/js?sensor=false&amp;language=en
 		gmaps_sensor.external = 1
@@ -32,6 +34,12 @@ page {
 	includeJSFooter {
 		theme_amalia = EXT:theme_amalia/Resources/Public/Javascript/script.js
 	}
+}
+
+tt_content.stdWrap.innerWrap.cObject.default.stdWrap.if {
+	value.field = tx_fed_fcefile
+	isInList = theme_amalia:Teaser.html
+	negate = 1
 }
 
 <INCLUDE_TYPOSCRIPT: source="DIR:./Gridelements" extensions="ts">

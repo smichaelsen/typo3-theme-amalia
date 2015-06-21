@@ -30,6 +30,12 @@
 			<trans-unit id="flux.teaser.fields.morebutton">
 				<source>Label for "more" button</source>
 			</trans-unit>
+			<trans-unit id="flux.topSlider">
+				<source>Top Slider</source>
+			</trans-unit>
+			<trans-unit id="flux.topSlider.columns.slides">
+				<source>Slides</source>
+			</trans-unit>
 			<trans-unit id="frontend.teaser.more">
 				<source>Read more</source>
 			</trans-unit>

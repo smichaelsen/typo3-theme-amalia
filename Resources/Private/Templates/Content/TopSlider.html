@@ -1,0 +1,37 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers">
+
+<f:layout name="Content"/>
+
+<f:section name="Configuration">
+	<flux:form id="topSlider">
+		<flux:grid>
+			<flux:grid.row>
+				<flux:grid.column name="slides"/>
+			</flux:grid.row>
+		</flux:grid>
+	</flux:form>
+</f:section>
+
+<f:section name="Preview">
+	<b><f:translate id="flux.topSlider"/></b><br>
+	<flux:grid />
+</f:section>
+
+<f:section name="Main">
+	<flux:content.render area="slides" as="childElements" render="false">
+		<div class="stage-slider<f:if condition="{childElements -> f:count()} > 1"> swiper-container</f:if>">
+			<div class="swiper-wrapper">
+				<flux:content.render area="slides"/>
+			</div>
+			<f:if condition="{childElements -> f:count()} > 1">
+				<div class="swiper-pagination"></div>
+				<div class="row swiper-buttons">
+					<div class="swiper-button-next swiper-button-white"></div>
+					<div class="swiper-button-prev swiper-button-white"></div>
+				</div>
+			</f:if>
+		</div>
+	</flux:content.render>
+</f:section>
+
+</html>
