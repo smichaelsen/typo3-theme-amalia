@@ -41,5 +41,3 @@ tt_content.stdWrap.innerWrap.cObject.default.stdWrap.if {
 	isInList = AppZap.ThemeAmalia:Teaser.html
 	negate = 1
 }
-
-<INCLUDE_TYPOSCRIPT: source="DIR:./Gridelements" extensions="ts">
